@@ -120,7 +120,7 @@ function logCommand() {
     //if the command is movie-this or spotify, it will add quotes around the value in log.txt
     var newCommand;
     if (command === "do-what-it-says"){
-        newCommand = "\n" + command + ":";
+        newCommand = "\n** " + command + ":";
     } else if (command === "my-tweets" ) {
         newCommand = "\n" + command;
     } else {
