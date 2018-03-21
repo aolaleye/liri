@@ -1,7 +1,17 @@
-my-tweets
-spotify-this-song 'mirrors'
 movie-this 'princess diaries'
-** do-what-it-says:
-spotify-this-song '"Freedom"'
-** do-what-it-says:
-spotify-this-song '"My Girl"'
+----------
+my-tweets
+----------
+movie-this 'training day'
+----------
+spotify-this-song 'mirrors'
+----------
+do-what-it-says:
+my-tweets
+----------
+do-what-it-says:
+spotify-this-song '"Beat It"'
+----------
+do-what-it-says:
+movie-this '"Mean Girls"'
+----------

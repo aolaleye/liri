@@ -19,6 +19,7 @@ function myTweets() {
         } else if (!error) {
             for (i = 0; i < tweets.length; i++) {
                 var counter = i + 1;
+                console.log("---------------------------------------------------");
                 console.log("Tweet #" + counter);
                 console.log(tweets[i].created_at);
                 console.log(tweets[i].text);
@@ -38,6 +39,7 @@ function spotifyThisSong() {
         if (err) {
           return console.log('Error occurred: ' + err);
         }
+        console.log("---------------------------------------------------");
         console.log("Song: " + data.tracks.items[0].name);
         console.log("Artist(s): " + data.tracks.items[0].artists[0].name);
         console.log("Album: " + data.tracks.items[0].album.name);
@@ -120,18 +122,17 @@ function logCommand() {
     //if the command is movie-this or spotify, it will add quotes around the value in log.txt
     var newCommand;
     if (command === "do-what-it-says"){
-        newCommand = "\n** " + command + ":";
+        newCommand = "\n" + command + ":";
     } else if (command === "my-tweets" ) {
-        newCommand = "\n" + command;
+        newCommand = "\n" + command + "\n--------------------";
     } else {
-        newCommand = "\n" + command + " " + "'" + value + "'";
+        newCommand = "\n" + command + " " + "'" + value + "'" + "\n--------------------";
     }
 
     fs.appendFile("log.txt", newCommand, function(err) {
         if (err) {
             console.log(err);
         } else {
-            console.log("---------------------------------------------------");
             console.log("This command has been logged in log.txt");
         }
     });
