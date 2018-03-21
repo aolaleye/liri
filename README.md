@@ -8,28 +8,28 @@ LIRI is able to take in the following commands:
 * `do-what-it-says`
 
 
-1. ```node liri.js my-tweets```
+`node liri.js my-tweets`
 
-__This will show the last 20 tweets from a twitter account and when the tweets were created at in your terminal/bash window.__
-
-
-2. ```node liri.js spotify-this-song '<song name here>'```
-
-__This will show the following information about the song in your terminal/bash window:__
-* _Artist(s)_
-* _The song's name_
-* _A preview link of the song from Spotify_
-* _The album that the song is from_
+* __This will show the last 20 tweets from a twitter account and when the tweets were created at in your terminal/bash window.__
 
 
-3. ```node liri.js movie-this '<movie name here>'```
+`node liri.js spotify-this-song '<song name here>'`
 
-__This will output the following information to your terminal/bash window:__
-* _Title of the movie._
-* _Year the movie came out._
-* _IMDB Rating of the movie._
-* _Rotten Tomatoes Rating of the movie._
-* _Country where the movie was produced._
-* _Language of the movie._
-* _Plot of the movie._
-* _Actors in the movie._
+* __This will show the following information about the song in your terminal/bash window:__
+    * _Artist(s)_
+    * _The song's name_
+    * _A preview link of the song from Spotify_
+    * _The album that the song is from_
+
+
+`node liri.js movie-this '<movie name here>'`
+
+* __This will output the following information to your terminal/bash window:__
+    * _Title of the movie._
+    * _Year the movie came out._
+    * _IMDB Rating of the movie._
+    * _Rotten Tomatoes Rating of the movie._
+    * _Country where the movie was produced._
+    * _Language of the movie._
+    * _Plot of the movie._
+    * _Actors in the movie._
