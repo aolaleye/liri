@@ -1,11 +1,36 @@
 require("dotenv").config();
 
-// var spotify = new Spotify(keys.spotify);
-// var client = new Twitter(keys.twitter);
+const keys = require('./keys');
+
 var fs = require("fs");
+
+// var Spotify = require('node-spotify-api');
+// var spotify = new Spotify(keys.spotify);
+
 var command = process.argv[2];
 var value = process.argv[3];
 
+// <--- my-tweets command (Twitter API) --->
+function myTweets() {
+    var Twitter = require('twitter');
+    var client = new Twitter(keys.twitter);
+
+    var params = {screen_name: 'BootcampStudent', count: 20};
+    
+    client.get('statuses/user_timeline', params, function(error, tweets, response) {
+        if (error) {
+            return console.log(error);
+        } else if (!error) {
+            for (i = 0; i < tweets.length; i++) {
+                var counter = i + 1;
+                console.log("---------------------------------------------------");
+                console.log("Tweet #" + counter);
+                console.log(tweets[i].created_at);
+                console.log(tweets[i].text);
+            }
+        }
+    });
+}//<--- end myTweets() function
 
 // <--- movie-this command (IMBD API) --->
 function movieThis() {
@@ -20,7 +45,7 @@ function movieThis() {
     request(queryUrl, function(error, response, body) {
         // Check for error
         if (!error && response.statusCode === 200) {
-            console.log("-------------------------------------------------------------------");
+            console.log("---------------------------------------------------");
             console.log("Title: " + JSON.parse(body).Title);
             console.log("Release Year: " + JSON.parse(body).Year);
             console.log("IMDB Rating: " + JSON.parse(body).imdbRating);
@@ -29,13 +54,13 @@ function movieThis() {
             console.log("Language: " + JSON.parse(body).Language);
             console.log("Plot: " + JSON.parse(body).Plot);
             console.log("Actors: " + JSON.parse(body).Actors);
-            console.log("-------------------------------------------------------------------");
+            console.log("---------------------------------------------------");
         }
     });
 
 } //<--- end movieThis() function
 
-// <--- do-what-it-says command (Random LIRI Command)
+// <--- do-what-it-says command (Random LIRI Command) --->
 function doWhatItSays() {
 
     fs.readFile("random.txt", "utf-8", function(error, data) {
@@ -58,9 +83,9 @@ function doWhatItSays() {
         command = newArray[0];
         value = newArray[1];
 
-        console.log("-------------------------------------------------------------------");
+        console.log("---------------------------------------------------");
         console.log("LIRI chose this command: " + command + " " + value);
-        console.log("-------------------------------------------------------------------");
+        console.log("---------------------------------------------------");
 
         if (command === "movie-this") {
             movieThis();
@@ -72,13 +97,13 @@ function doWhatItSays() {
 // <--- appends commands to log.txt --->
 function logCommand() {
     
-    var newCommand = "\n" + command + " " + "'" + value + "'";
+    var newCommand = "\n" + command + " " + value;
 
     fs.appendFile("log.txt", newCommand, function(err) {
         if (err) {
             console.log(err);
         } else {
-            console.log("-------------------------------------------------------------------");
+            console.log("---------------------------------------------------");
             console.log("This command has been logged in log.txt");
         }
     });
@@ -91,5 +116,9 @@ if (command === "do-what-it-says") {
     logCommand();
 } else if (command === "movie-this") {
     movieThis();
+    logCommand();
+} else if (command === "my-tweets") {
+    myTweets();
+    value = "";
     logCommand();
 }
