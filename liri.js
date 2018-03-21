@@ -1,11 +1,7 @@
 require("dotenv").config();
-
 const keys = require('./keys');
 
 var fs = require("fs");
-
-// var Spotify = require('node-spotify-api');
-// var spotify = new Spotify(keys.spotify);
 
 var command = process.argv[2];
 var value = process.argv[3];
@@ -31,6 +27,23 @@ function myTweets() {
         }
     });
 }//<--- end myTweets() function
+
+// <--- spotify-this-song command (Spotify API) --->
+function spotifyThisSong() {
+    var Spotify = require('node-spotify-api');
+    var spotify = new Spotify(keys.spotify);
+
+    spotify.search({ type: 'track', query: value, limit: 1 }, function(err, data) {
+        if (err) {
+          return console.log('Error occurred: ' + err);
+        }
+        console.log("Song: " + data.tracks.items[0].name);
+        console.log("Artist(s): " + data.tracks.items[0].artists[0].name);
+        console.log("Album: " + data.tracks.items[0].album.name);
+        console.log("Preview the song here: " + data.tracks.items[0].preview_url);
+        console.log("---------------------------------------------------");
+      });
+}//<--- end spotifyThisSong() function
 
 // <--- movie-this command (IMBD API) --->
 function movieThis() {
@@ -124,5 +137,8 @@ if (command === "do-what-it-says") {
     logCommand();
 } else if (command === "my-tweets") {
     myTweets();
+    logCommand();
+} else if (command === "spotify-this-song") {
+    spotifyThisSong();
     logCommand();
 }
