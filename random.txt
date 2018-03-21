@@ -5,6 +5,12 @@ spotify-this-song,"Beat It"
 movie-this,"Mean Girls"
 spotify-this-song,"Freedom"
 movie-this,"Superman"
-my-tweets,
 spotify-this-song,"My Girl"
 movie-this,"The Hangover"
+spotify-this-song,"Mirrors"
+movie-this,"The Devil Wears Prada"
+spotify-this-song,"Thriller"
+my-tweets,
+movie-this,"Training Day"
+spotify-this-song,"Hello"
+movie-this,"The Dark Knight"
