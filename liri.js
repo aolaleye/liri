@@ -84,7 +84,7 @@ function doWhatItSays() {
         value = newArray[1];
 
         console.log("---------------------------------------------------");
-        console.log("LIRI chose this command: " + command + " " + value);
+        console.log("LIRI randomly chose this command ---> " + command + " " + value);
         console.log("---------------------------------------------------");
 
         if (command === "movie-this") {
@@ -97,7 +97,13 @@ function doWhatItSays() {
 // <--- appends commands to log.txt --->
 function logCommand() {
     
-    var newCommand = "\n" + command + " " + value;
+    //if the command is movie-this or spotify, it will add quotes around the value in log.txt
+    var newCommand;
+    if (command === "do-what-it-says" || command === "my-tweets" ) {
+        newCommand = "\n" + command;
+    } else {
+        newCommand = "\n" + command + " " + "'" + value + "'";
+    }
 
     fs.appendFile("log.txt", newCommand, function(err) {
         if (err) {
@@ -112,13 +118,11 @@ function logCommand() {
 
 if (command === "do-what-it-says") {
     doWhatItSays();
-    value = "";
     logCommand();
 } else if (command === "movie-this") {
     movieThis();
     logCommand();
 } else if (command === "my-tweets") {
     myTweets();
-    value = "";
     logCommand();
 }
