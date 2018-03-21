@@ -38,4 +38,4 @@ LIRI is able to take in the following commands:
 
 #### `node liri.js do-what-it-says`
 
-* __This will output a random LIRI command to your terminal/bash window:__
+* __This will output a random LIRI command to your terminal/bash window__
