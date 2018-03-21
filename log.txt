@@ -18,3 +18,7 @@ movie-this '"Mean Girls"'
 do-what-it-says:
 spotify-this-song '"Beat It"'
 ----------------------------------
+movie-this '13 going on 30'
+----------------------------------
+spotify-this-song 'Hello'
+----------------------------------
