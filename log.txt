@@ -1,17 +1,20 @@
 movie-this 'princess diaries'
-----------
+----------------------------------
 my-tweets
-----------
+----------------------------------
 movie-this 'training day'
-----------
+----------------------------------
 spotify-this-song 'mirrors'
-----------
+----------------------------------
 do-what-it-says:
 my-tweets
-----------
+----------------------------------
 do-what-it-says:
 spotify-this-song '"Beat It"'
-----------
+----------------------------------
 do-what-it-says:
 movie-this '"Mean Girls"'
-----------
+----------------------------------
+do-what-it-says:
+spotify-this-song '"Beat It"'
+----------------------------------

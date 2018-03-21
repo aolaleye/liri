@@ -124,9 +124,9 @@ function logCommand() {
     if (command === "do-what-it-says"){
         newCommand = "\n" + command + ":";
     } else if (command === "my-tweets" ) {
-        newCommand = "\n" + command + "\n--------------------";
+        newCommand = "\n" + command + "\n----------------------------------";
     } else {
-        newCommand = "\n" + command + " " + "'" + value + "'" + "\n--------------------";
+        newCommand = "\n" + command + " " + "'" + value + "'" + "\n----------------------------------";
     }
 
     fs.appendFile("log.txt", newCommand, function(err) {
