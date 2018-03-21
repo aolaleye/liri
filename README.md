@@ -16,6 +16,7 @@ LIRI is able to take in the following commands:
 `node liri.js spotify-this-song '<song name here>'`
 
 * __This will show the following information about the song in your terminal/bash window:__
+
     * _Artist(s)_
     * _The song's name_
     * _A preview link of the song from Spotify_
@@ -25,6 +26,7 @@ LIRI is able to take in the following commands:
 `node liri.js movie-this '<movie name here>'`
 
 * __This will output the following information to your terminal/bash window:__
+
     * _Title of the movie._
     * _Year the movie came out._
     * _IMDB Rating of the movie._
@@ -33,3 +35,7 @@ LIRI is able to take in the following commands:
     * _Language of the movie._
     * _Plot of the movie._
     * _Actors in the movie._
+
+`node liri.js do-what-it-says`
+
+* __This will output a random LIRI command to your terminal/bash window:__
