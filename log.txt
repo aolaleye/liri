@@ -1,11 +1,26 @@
 movie-this 'mad money'
 my-tweets
 movie-this 'cinderella'
-do-what-it-says
 spotify-this-song 'freedom'
 spotify-this-song 'beat it'
-do-what-it-says
-do-what-it-says
-do-what-it-says
-do-what-it-says
-do-what-it-says
+movie-this 'princess diaries'
+do-what-it-says:
+my-tweets
+do-what-it-says:
+my-tweets
+do-what-it-says:
+my-tweets
+do-what-it-says:
+movie-this '"The Hangover"'
+do-what-it-says:
+my-tweets
+do-what-it-says:
+spotify-this-song '"Freedom"'
+do-what-it-says:
+my-tweets
+do-what-it-says:
+my-tweets
+do-what-it-says:
+movie-this '"Superman"'
+do-what-it-says:
+spotify-this-song '"Beat It"'

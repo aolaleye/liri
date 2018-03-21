@@ -26,6 +26,7 @@ function myTweets() {
             }
         }
     });
+    logCommand();
 }//<--- end myTweets() function
 
 // <--- spotify-this-song command (Spotify API) --->
@@ -42,7 +43,8 @@ function spotifyThisSong() {
         console.log("Album: " + data.tracks.items[0].album.name);
         console.log("Preview the song here: " + data.tracks.items[0].preview_url);
         console.log("---------------------------------------------------");
-      });
+    });
+    logCommand();
 }//<--- end spotifyThisSong() function
 
 // <--- movie-this command (IMBD API) --->
@@ -70,7 +72,7 @@ function movieThis() {
             console.log("---------------------------------------------------");
         }
     });
-
+    logCommand();
 } //<--- end movieThis() function
 
 // <--- do-what-it-says command (Random LIRI Command) --->
@@ -109,6 +111,7 @@ function doWhatItSays() {
         }   
     
     });
+    logCommand();
 } //<--- end doWhatItSays() function
 
 // <--- appends commands to log.txt --->
@@ -116,7 +119,9 @@ function logCommand() {
     
     //if the command is movie-this or spotify, it will add quotes around the value in log.txt
     var newCommand;
-    if (command === "do-what-it-says" || command === "my-tweets" ) {
+    if (command === "do-what-it-says"){
+        newCommand = "\n" + command + ":";
+    } else if (command === "my-tweets" ) {
         newCommand = "\n" + command;
     } else {
         newCommand = "\n" + command + " " + "'" + value + "'";
@@ -133,16 +138,13 @@ function logCommand() {
 
 } //<--- end logCommand() function
 
+//run program
 if (command === "do-what-it-says") {
     doWhatItSays();
-    logCommand();
 } else if (command === "movie-this") {
     movieThis();
-    logCommand();
 } else if (command === "my-tweets") {
     myTweets();
-    logCommand();
 } else if (command === "spotify-this-song") {
     spotifyThisSong();
-    logCommand();
 }
