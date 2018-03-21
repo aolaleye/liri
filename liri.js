@@ -129,6 +129,7 @@ function logCommand() {
         newCommand = "\n" + command + " " + "'" + value + "'" + "\n----------------------------------";
     }
 
+    //appends command to log.txt
     fs.appendFile("log.txt", newCommand, function(err) {
         if (err) {
             console.log(err);
@@ -136,7 +137,6 @@ function logCommand() {
             console.log("This command has been logged in log.txt");
         }
     });
-
 } //<--- end logCommand() function
 
 //run program
