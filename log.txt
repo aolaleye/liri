@@ -4,8 +4,8 @@ movie-this 'cinderella'
 do-what-it-says
 spotify-this-song 'freedom'
 spotify-this-song 'beat it'
-spotify-this-song 'beat it'
-spotify-this-song 'beat it'
-spotify-this-song 'beat it'
-spotify-this-song 'beat it'
-spotify-this-song 'beat it'
+do-what-it-says
+do-what-it-says
+do-what-it-says
+do-what-it-says
+do-what-it-says

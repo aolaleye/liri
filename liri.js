@@ -19,10 +19,10 @@ function myTweets() {
         } else if (!error) {
             for (i = 0; i < tweets.length; i++) {
                 var counter = i + 1;
-                console.log("---------------------------------------------------");
                 console.log("Tweet #" + counter);
                 console.log(tweets[i].created_at);
                 console.log(tweets[i].text);
+                console.log("---------------------------------------------------");
             }
         }
     });
@@ -77,21 +77,21 @@ function movieThis() {
 function doWhatItSays() {
 
     fs.readFile("random.txt", "utf-8", function(error, data) {
-        // check for error
+        // checks for error
         if (error) {
             return console.log(error);
         }
         
-        //make random.txt an array
-        var randomArray = data.split("+ ");    
+        //makes random.txt an array
+        var randomArray = data.split("\n");    
         
-        //choose a random array item from random.txt
+        //chooses a random array item from random.txt
         Array.prototype.randomElement = function () {
             return this[Math.floor(Math.random() * this.length)]
         }
         var randomCommand = randomArray.randomElement();
         
-        //make the selected random item an array
+        //makes the selected random item an array
         var newArray = randomCommand.split(",");
         command = newArray[0];
         value = newArray[1];
@@ -102,7 +102,11 @@ function doWhatItSays() {
 
         if (command === "movie-this") {
             movieThis();
-        }     
+        } else if (command === "spotify-this-song") {
+            spotifyThisSong();
+        } else if (command === "my-tweets") {
+            myTweets(); 
+        }   
     
     });
 } //<--- end doWhatItSays() function
