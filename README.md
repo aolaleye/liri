@@ -7,7 +7,7 @@ LIRI is able to take in the following commands:
 * `movie-this`
 * `do-what-it-says`
 
-__For Example:__
+### How to input commands:
 
 #### `node liri.js my-tweets`
 
@@ -39,4 +39,4 @@ __For Example:__
 
 #### `node liri.js do-what-it-says`
 
-* __LIRI will output a random command to your terminal/bash window__
+* LIRI will output a random command to your terminal/bash window
