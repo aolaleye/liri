@@ -7,15 +7,16 @@ LIRI is able to take in the following commands:
 * `movie-this`
 * `do-what-it-says`
 
+__For Example:__
 
 #### `node liri.js my-tweets`
 
-* __LIRI will show the last 20 tweets from a twitter account and when the tweets were created at in your terminal/bash window.__
+* LIRI will show the last 20 tweets from a twitter account and when the tweets were created at in your terminal/bash window.
 
 
 #### `node liri.js spotify-this-song '<song name here>'`
 
-* __LIRI will show the following information about the song in your terminal/bash window:__
+* LIRI will show the following information about the song in your terminal/bash window:
 
     * _Artist(s)_
     * _The song's name_
@@ -25,7 +26,7 @@ LIRI is able to take in the following commands:
 
 #### `node liri.js movie-this '<movie name here>'`
 
-* __LIRI will output the following information to your terminal/bash window:__
+* LIRI will output the following information to your terminal/bash window:
 
     * _Title of the movie._
     * _Year the movie came out._
