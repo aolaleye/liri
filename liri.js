@@ -35,6 +35,11 @@ function spotifyThisSong() {
     var Spotify = require('node-spotify-api');
     var spotify = new Spotify(keys.spotify);
 
+     //If the user doesn't type a movie in, the program will output data for the song 'The Sign'
+     if (value === undefined) {
+        value = 'The Sign Ace of Base';
+    }
+
     spotify.search({ type: 'track', query: value, limit: 1 }, function(err, data) {
         if (err) {
           return console.log('Error occurred: ' + err);
