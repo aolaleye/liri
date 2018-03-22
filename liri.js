@@ -8,6 +8,7 @@ var value = process.argv[3];
 
 // <--- my-tweets command (Twitter API) --->
 function myTweets() {
+
     var Twitter = require('twitter');
     var client = new Twitter(keys.twitter);
 
@@ -27,16 +28,19 @@ function myTweets() {
             }
         }
     });
+
     logCommand();
+
 }//<--- end myTweets() function
 
 // <--- spotify-this-song command (Spotify API) --->
 function spotifyThisSong() {
+
     var Spotify = require('node-spotify-api');
     var spotify = new Spotify(keys.spotify);
 
-     //If the user doesn't type a movie in, the program will output data for the song 'The Sign'
-     if (value === undefined) {
+    //If the user doesn't type a movie in, the program will output data for the song 'The Sign'
+    if (value === undefined) {
         value = 'The Sign Ace of Base';
     }
 
@@ -51,7 +55,9 @@ function spotifyThisSong() {
         console.log("Preview the song here: " + data.tracks.items[0].preview_url);
         console.log("---------------------------------------------------");
     });
+
     logCommand();
+
 }//<--- end spotifyThisSong() function
 
 // <--- movie-this command (IMBD API) --->
@@ -84,7 +90,9 @@ function movieThis() {
             console.log("---------------------------------------------------");
         }
     });
+
     logCommand();
+
 } //<--- end movieThis() function
 
 // <--- do-what-it-says command (Random LIRI Command) --->
@@ -121,9 +129,10 @@ function doWhatItSays() {
         } else if (command === "my-tweets") {
             myTweets(); 
         }   
-    
     });
+
     logCommand();
+
 } //<--- end doWhatItSays() function
 
 // <--- appends commands to log.txt --->
@@ -147,6 +156,7 @@ function logCommand() {
             console.log("This command has been logged in log.txt");
         }
     });
+
 } //<--- end logCommand() function
 
 //run program
