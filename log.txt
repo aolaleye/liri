@@ -22,3 +22,7 @@ movie-this '13 going on 30'
 ----------------------------------
 spotify-this-song 'Hello'
 ----------------------------------
+movie-this 'Mr. Nobody'
+----------------------------------
+movie-this 'sleepless in seattle'
+----------------------------------

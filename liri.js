@@ -54,6 +54,11 @@ function movieThis() {
 
     var request = require("request");
 
+    //If the user doesn't type a movie in, the program will output data for 'Mr. Nobody.'
+    if (value === undefined) {
+        value = 'Mr. Nobody';
+    }
+
     var queryUrl = "http://www.omdbapi.com/?t=" + value + "&y=&plot=short&apikey=trilogy";
 
     // This line just debugs against the actual URL.
