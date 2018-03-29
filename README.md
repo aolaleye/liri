@@ -11,12 +11,12 @@ LIRI is able to take in the following commands:
 
 #### `node liri.js my-tweets`
 
-* LIRI will show the last 20 tweets from a twitter account and when the tweets were created at in your terminal/bash window.
+* LIRI will show the last 20 tweets from a programming themed twitter account and when the tweets were created at in your terminal/bash window.
 
 
 #### `node liri.js spotify-this-song '<song name here>'`
 
-_For example: `node liri.js spotify-this-song 'Thriller'`_
+_i.e.: `node liri.js spotify-this-song 'Thriller'`_
 * LIRI will show the following information about the song in your terminal/bash window:
 
     * _Artist(s)_
@@ -27,7 +27,7 @@ _For example: `node liri.js spotify-this-song 'Thriller'`_
 
 #### `node liri.js movie-this '<movie name here>'`
 
-_For example: `node liri.js movie-this 'Mad Money'`_
+_i.e.: `node liri.js movie-this 'Mad Money'`_
 * LIRI will output the following information to your terminal/bash window:
 
     * _Title of the movie._
