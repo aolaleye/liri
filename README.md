@@ -19,10 +19,10 @@ LIRI is able to take in the following commands:
 * _i.e. `node liri.js spotify-this-song 'Thriller'`_
     * LIRI will show the following information about the song in your terminal/bash window:
 
-        * _Artist(s)_
+        * _The artist(s)_
         * _The song's name_
+        * _The name of the album_
         * _A preview link of the song from Spotify_
-        * _The album that the song is from_
 
 
 #### `node liri.js movie-this '<movie name here>'`
@@ -30,14 +30,14 @@ LIRI is able to take in the following commands:
 * _i.e. `node liri.js movie-this 'Mad Money'`_
     * LIRI will output the following information to your terminal/bash window:
 
-        * _Title of the movie._
-        * _Year the movie came out._
-        * _IMDB Rating of the movie._
-        * _Rotten Tomatoes Rating of the movie._
-        * _Country where the movie was produced._
-        * _Language of the movie._
-        * _Plot of the movie._
-        * _Actors in the movie._
+        * _The title of the movie_
+        * _The year the movie came out_
+        * _The actors in the movie_
+        * _The IMDB Rating of the movie_
+        * _The Rotten Tomatoes Rating of the movie_
+        * _The country where the movie was produced_
+        * _The language of the movie_
+        * _A plot summary of the movie_
 
 #### `node liri.js do-what-it-says`
 
