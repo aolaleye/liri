@@ -16,7 +16,7 @@ LIRI is able to take in the following commands:
 
 #### `node liri.js spotify-this-song '<song name here>'`
 
-* i.e. `node liri.js spotify-this-song 'Thriller'`
+* _i.e._ `node liri.js spotify-this-song 'Thriller'`
 * LIRI will show the following information about the song in your terminal/bash window:
 
     * _Artist(s)_
@@ -27,7 +27,7 @@ LIRI is able to take in the following commands:
 
 #### `node liri.js movie-this '<movie name here>'`
 
-* i.e. `node liri.js movie-this 'Mad Money'`
+* _i.e._ `node liri.js movie-this 'Mad Money'`
 * LIRI will output the following information to your terminal/bash window:
 
     * _Title of the movie._
