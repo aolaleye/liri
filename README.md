@@ -7,6 +7,8 @@ LIRI is able to take in the following commands:
 * `movie-this`
 * `do-what-it-says`
 
+#
+
 ### How to input commands:
 
 #### `node liri.js my-tweets`
@@ -45,4 +47,4 @@ LIRI is able to take in the following commands:
 
 __DEMO:__
 
-![alt text](img/liri1.gif)
+![alt text](liri1.gif)
