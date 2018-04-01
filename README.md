@@ -15,6 +15,7 @@ LIRI is able to take in the following commands:
 
 ![alt text](liri1.gif)
 
+
 #### `node liri.js spotify-this-song '<song name here>'`
 
 * _i.e. `node liri.js spotify-this-song 'Thriller'`_
@@ -26,6 +27,7 @@ LIRI is able to take in the following commands:
         * _A preview link of the song from Spotify_
 
 ![alt text](liri2.gif)
+
 
 
 #### `node liri.js movie-this '<movie name here>'`
@@ -44,8 +46,9 @@ LIRI is able to take in the following commands:
 
 ![alt text](liri3.gif)
 
+
 #### `node liri.js do-what-it-says`
 
 * LIRI will output a random command to your terminal/bash window
 
-![alt text](liri14.gif)
+![alt text](liri4.gif)
