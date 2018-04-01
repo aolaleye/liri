@@ -13,7 +13,7 @@ LIRI is able to take in the following commands:
 
 * LIRI will show the last 20 tweets from a programming themed twitter account and when the tweets were created at in your terminal/bash window.
 
-* ![alt text](liri1.gif)
+* ![alt text](img/liri1.gif)
 
 
 #### `node liri.js spotify-this-song '<song name here>'`
@@ -26,7 +26,7 @@ LIRI is able to take in the following commands:
         * _The name of the album_
         * _A preview link of the song from Spotify_
 
-    * ![alt text](liri2.gif)
+    * ![alt text](img/liri2.gif)
 
 
 
@@ -44,11 +44,11 @@ LIRI is able to take in the following commands:
         * _The language of the movie_
         * _A plot summary of the movie_
 
-    * ![alt text](liri3.gif)
+    * ![alt text](img/liri3.gif)
 
 
 #### `node liri.js do-what-it-says`
 
 * LIRI will output a random command to your terminal/bash window
 
-* ![alt text](liri4.gif)
+* ![alt text](img/liri4.gif)
