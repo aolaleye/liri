@@ -29,3 +29,31 @@ movie-this 'sleepless in seattle'
 do-what-it-says:
 my-tweets
 ----------------------------------
+my-tweets
+----------------------------------
+spotify-this-song 'Hello'
+----------------------------------
+movie-this 'Friday Night Lights'
+----------------------------------
+do-what-it-says:
+spotify-this-song '"I Want it That Way"'
+----------------------------------
+do-what-it-says:
+spotify-this-song '"Freedom"'
+----------------------------------
+my-tweets
+----------------------------------
+my-tweets
+----------------------------------
+my-tweets
+----------------------------------
+spotify-this-song 'Hello'
+----------------------------------
+movie-this 'Friday Night Lights'
+----------------------------------
+do-what-it-says:
+spotify-this-song '"My Girl"'
+----------------------------------
+do-what-it-says:
+movie-this '"Mean Girls"'
+----------------------------------
