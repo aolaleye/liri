@@ -11,11 +11,11 @@ LIRI is able to take in the following commands:
 
 ### How to input commands:
 
-#### `node liri.js my-tweets`
+#### > `node liri.js my-tweets`
 
 * LIRI will show the last 20 tweets from a programming themed twitter account and when the tweets were created at in your terminal/bash window.
 
-#### `node liri.js spotify-this-song '<song name here>'`
+#### > `node liri.js spotify-this-song '<song name here>'`
 
 * _i.e. `node liri.js spotify-this-song 'Thriller'`_
     * LIRI will show the following information about the song in your terminal/bash window:
@@ -25,7 +25,7 @@ LIRI is able to take in the following commands:
         * _The name of the album_
         * _A preview link of the song from Spotify_
 
-#### `node liri.js movie-this '<movie name here>'`
+#### > `node liri.js movie-this '<movie name here>'`
 
 * _i.e. `node liri.js movie-this 'Mad Money'`_
     * LIRI will output the following information to your terminal/bash window:
@@ -39,12 +39,12 @@ LIRI is able to take in the following commands:
         * _The language of the movie_
         * _A plot summary of the movie_
 
-#### `node liri.js do-what-it-says`
+#### > `node liri.js do-what-it-says`
 
 * LIRI will output a random command to your terminal/bash window
 
 #
 
-__DEMO VIDEO:__
+### > __Demo Video:__
 
 [![LIRI Demo Video](liri1.gif)](https://drive.google.com/open?id=1yIGO7zmgHGJt60S7-JO43x4IVEsEPMwH)
