@@ -3,7 +3,7 @@ movie-this,"Remember the Titans"
 my-tweets,
 spotify-this-song,"Beat It"
 movie-this,"Mean Girls"
-spotify-this-song,"Freedom"
+spotify-this-song,"Girl on Fire"
 movie-this,"Superman"
 spotify-this-song,"My Girl"
 movie-this,"The Hangover"
