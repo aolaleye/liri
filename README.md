@@ -47,4 +47,4 @@ LIRI is able to take in the following commands:
 
 __DEMO:__
 
-![alt text](liri1.gif)
+[![alt text](liri1.gif)](https://drive.google.com/open?id=1yIGO7zmgHGJt60S7-JO43x4IVEsEPMwH)
