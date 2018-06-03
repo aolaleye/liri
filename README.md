@@ -1,4 +1,4 @@
-# LIRI - Node Application
+# LIRI
 LIRI is a command line node app that takes in parameters and gives back data. LIRI is like the iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI accesses information from the Twitter, Spotify and OMDB APIs.
 
 LIRI is able to take in the following commands:
@@ -45,6 +45,6 @@ LIRI is able to take in the following commands:
 
 #
 
-### > __Demo Video:__
+### > __Click for Demo Video:__
 
 [![LIRI Demo Video](liri1.gif)](https://drive.google.com/open?id=1yIGO7zmgHGJt60S7-JO43x4IVEsEPMwH)
