@@ -45,6 +45,6 @@ LIRI is able to take in the following commands:
 
 #
 
-### > __Click for Demo Video:__
+### > __Click Below for Demo Video:__
 
 [![LIRI Demo Video](liri1.gif)](https://drive.google.com/open?id=1yIGO7zmgHGJt60S7-JO43x4IVEsEPMwH)
